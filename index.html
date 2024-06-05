@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; 
+            color: white;
+            background-position: center-bottom;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: black;
+            color: forestgreen;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            position: relative;
+            z-index: 2;
+        }
+        header p {
+            position: relative;
+            z-index: 2;
+        }
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20%;
+            background: url('') no-repeat center center/cover;
+            opacity: 0.5;
+            z-index: 1;
+            animation: moveBackground 15s linear infinite;
+        }
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 0; }
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        nav form {
+            display: flex;
+            align-items: center;
+        }
+        nav input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        nav input[type="submit"] {
+            padding: 5px 10px;
+            background: forestgreen;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        nav input[type="submit"]:hover {
+            background: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .importance {
+            background: none;
+            color: white;
+            font-size: large;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            animation: fadeIn 2s;
+        }
+        .importance h2 {
+            text-align: center;
+            margin: auto;
+            color: greenyellow;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .video-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .content-sections {
+            display: flex;
+            justify-content: space-between;
+        }
+        .content-section {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin: 20px 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+        .content-section h2 {
+            text-align: center;
+            color:yellowgreen ;
+        }
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-section ul li {
+            margin: 10px 0;
+        }
+        .content-section .post {
+            margin: 10px 0;
+        }
+        .content-section .post h3 {
+            margin: 0;
+        }
+        .content-sections a {
+         color: red;   
+        }
+        .container-signup {
+        background-color: #900D0D;
+        width: 40%;
+        height: 40%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 20px;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+    h1, p {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label, input, button {
+        margin: 10px;
+    }
+    input, button {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    button {
+        background-color: #ffa500;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #cc8400;
+    }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <h1>Welcome to Equity Frames Collective</h1>
+        <p><i>Advancing Mental Health Equity Through a Photographic Lense</i></p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Stories.html">Stories</a>
+        <a href="Contact.html">Contact</a>
+        
+    </nav>
+    <div class="container">
+        <section class="importance">
+            <h2><b>The Importance of Mental Health Equity</b></h2>
+            <p>Mental health equity ensures that everyone has access to the mental health resources they need, regardless of their race, socioeconomic status, or geographical location. It addresses the disparities in mental health care by promoting non-discriminatory and equal access to services and support. This is crucial because mental health challenges do not discriminate, and everyone deserves the opportunity to achieve mental well-being. By advocating for mental health equity, we can help reduce stigma, improve mental health outcomes, and create a more inclusive society where everyone has the chance to thrive.</p>
+        </section>
+    </div>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/G_9oyDcz7Jo" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="container">
+        <section class="importance">
+            <h2><b>The Status of Mental Health Equity in Zimbabwe</b></h2>
+            <p>In Zimbabwe, mental health remains a largely neglected aspect of public health, overshadowed by the prevalence of physical health issues and the stigma surrounding psychological disorders. Mental health conditions are often misunderstood and attributed to witchcraft or spiritual afflictions, leading many to seek help from traditional healers rather than medical professionals. This cultural perception significantly hampers the efforts to address mental health challenges adequately. <br> </br>
+
+                The country has a limited number of public institutions equipped to handle psychiatric cases, namely Harare Hospital Psychiatric Unit, Parirenyatwa Hospital Annexe, Ingutsheni Hospital, Mpilo Hospital Psychiatric Unit, Ngomahuru Hospital, and Mutare Hospital Sakubva Unit. These facilities struggle with underfunding, inadequate infrastructure, and a shortage of trained mental health professionals, making it difficult to provide comprehensive care. Furthermore, three facilities—Mlondolozi Special Institution, Harare Central Prison, and Chikurubi Special Institution—offer forensic psychiatry services, catering to patients within the criminal justice system.
+                
+                <br> </br>The available mental health services are not adequately equipped to cater to specific groups such as children and the elderly. The lack of specialized facilities and programs for these demographics means they often receive inappropriate or insufficient care. Additionally, the broader mental health infrastructure suffers from a lack of integration with primary health care services, leading to fragmented and inconsistent treatment pathways for patients. 
+                
+                Overall, the mental health landscape in Zimbabwe is one of severe neglect and underdevelopment, with significant gaps in service provision, exacerbated by pervasive societal stigma and cultural misconceptions. Efforts to improve this situation require substantial investment in mental health education, infrastructure, and professional training, alongside initiatives to shift public perceptions and reduce the stigma associated with mental health disorders.
+                </p>
+        </section>
+    </div>
+    
+    <div class="container content-sections">
+        <section class="content-section resources">
+            <h2>Voices for Mental Health Equity: Zimbabwe 2024</h2>
+            <div class="post">
+                <p>Equity Frames Collective seeks to cultivate an advocacy culture in Zimbabwean youths through challenging them to utilize their writing and creative skills to write about mental health equity in Zimbabwe. The <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX3D8I3evZDFyBdpy_V6P7bFpVf5K7uoCLMxXRVqy7rLA-jQ/viewform?pli=1">competition</a> is open to high school students from all the 10 provinces of Zimbabwe. <br> </br> The submission deadline for the 2024 competition is July 31, 2024 at 23:59 hrs.</p>
+               <img src="assets/comp2024.png" width="100%" height="40%">
+            </div>
+        </section>
+
+        <section class="content-section blog">
+            <h2>Selected Blog Posts</h2>
+            <div class="post">
+                <h3><a href="https://www.dbhutah.org/5-warning-signs-of-mental-illness/">5 Warning Signs of Mental Illness</a></h3>
+                <p>Published on December 27, 2023 Davies Behavioral Health website.</p>
+                <p>In this post, the author discussed how mental wellness is crucial for a fulfilling life and chronic stress can lead to serious mental health issues like depression and anxiety.</p>
+            </div>
+            <div class="post">
+                <h3><a href="https://www.nami.org/asian-american-pacific-islander/stereotypes-and-seeking-care-in-a-racialized-america/">Mental Health Stereotypes and Seeking Care</a></h3>
+                <p>Published on July 07, 2021 by Diana Chao.</p>
+                <p>This blog post explores the author's personal experiences with cultural misunderstandings in therapy due to their Chinese-American background, challenging the stereotype of "tiger parenting" and discussing their bipolar disorder.</p>
+            </div>
+        </section>
+
+        <section class="content-section support">
+            <h2>Mental Health Support Services in Zimbabwe</h2>
+    
+                <a href="assets/LIST OF COUNSELORS  PSYCHOLOGISTS AND PSYCHIATRISTS IN ZIMBABWE  .pdf" download>List of mental health counselors and other support services</a>
+            
+            
+        </section>
+    </div>
+    <div class="container-signup">
+        <h1>Sign Up To Stay Connected</h1>
+        <p>Receive information about upcoming activities and organization updates, directly to your inbox. You may unsubscribe from these communications at any time. For more information.</p>
+        <form action="index.php" method="POST">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" required>
+    
+            <label for="firstname">First Name*</label>
+            <input type="text" id="firstname" required>
+    
+            <label for="lastname">Last Name*</label>
+            <input type="text" id="lastname" required>
+    
+            <label for="dob">Date of Birth (optional)</label>
+            <input type="date" id="dob">
+    
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Equity Frames Collective. All rights reserved.</p>
+    </footer>
+</body>
+</html>
